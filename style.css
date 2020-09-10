@@ -1,59 +1,28 @@
 
 
-body {
-	/*background-image: url(Sketchpad.png)*/
-	/*background-size: cover;*/
+body{
+  margin: 0;
+  padding: 100;
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'PT Serif', serif;
 }
 
-
-h2 {
-	color: rgba(255,0,255,1);
-	font-size: 25px;
+a{
+	display: flex;
+	color: rgba(255,255,255,0.8);
+	font-size: 35px;
 	text-align: center;
-	/*border: 2px solid rgba(155,100,250,0.5);*/
-	/*border-style: double;*/
+	text-decoration: none;
+	width: 350px;
+  	margin: 100px auto 0;
+  	padding: 10px;
 }
-h2:hover{
-	color: rgba(255,0,255,0.5);
-	/*font-size: 26px;*/
+a:hover{
+	color: rgba(255,255,255,1);
 	cursor: pointer;
 
 }
 
-p {
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 25px;
-	/*font-weight: bold;*/
-	font-size: 100%;
-	font-family: "Times New Roman";
-}
-
-span {
-	font-size: 2em;
-}
-li {
-	list-style: none;
-	display: inline-block;
-}
-
-
 img {
 	float: left;
-}
-
-
-footer {
-	clear: both;
-	text-align: center;
-}
-.my_class{
-	color: blue
-}
-
-.boxmodel {
-	border: 5px solid green;
-	display: inline-block;
-	padding: 1px 20px 5px 20px;
-	margin: 20px 10px
 }

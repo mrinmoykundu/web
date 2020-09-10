@@ -1,30 +1,50 @@
-ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-}
-li {
-  counter-increment: my-awesome-counter;
-  margin: 0.25rem;
-}
-li::before {
-  content: counter(my-awesome-counter);
-  background: #662974;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 2rem;
-  color: white;
-  text-align: center;
-  margin-right: 0.5rem;
-}
-ol ol li::before {
-  background: #DE3AFF;
-}
-ol ol ol li::before {
-  background: #EE3AFF;
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0.9);
+  font-family: 'PT Serif', serif;
 }
 
-body {
-  font-family: 'PT Serif', serif;
+ol {
+  position: relative;
+  width: 450px;
+  margin: 20px auto 0;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 25px;
+  /*counter-reset: my-awesome-counter;*/
+}
+
+
+ul {
+  list-style-type: none;
+}
+.date{
+  display: flex
+  background: rgba(220,220,220,0.1);
+  padding: 10px 30px;
+  margin: 5px 0;
+  transition: 10.5px;
+}
+
+.ct{
+  font-size: 17px;
+  padding: 10px 30px;
+  margin: 5px 0;
+}
+
+.assignment{
+  font-size: 17px;
+  padding: 10px 30px;
+  margin: 5px 0;
+}
+
+.expired{
+  font-size: 17px;
+  color: red;
+  display: none;
+
 }

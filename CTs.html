@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 
   <link rel="stylesheet" type="text/css" href="style_cts.css">
+
+  <script src="query.js"></script>
 </head>
 <body>
   <header>
@@ -23,6 +25,7 @@
   <div class = "date"> 
     <li>  <span class="Date">12/9/2020</span> - Saturday
     <span class="expired"> Date has expired </span>
+    <span class="time_remaining"></span>
       <ul>
         <div class = "ct">
             <li class = "subject"> EEE 207 </li>
@@ -38,6 +41,7 @@
   <div class = "date"> 
     <li> <span class="Date">14/9/2020</span> - Monday
     <span class="expired"> Date has expired </span>
+    <span class="time_remaining"></span>
       <ul>
         <div class = "ct">
             <li class = "subject"> Math 357 </li>
@@ -51,25 +55,9 @@
 
 </ol>
 
-<script>
-  var today=new Date();
 
-
-  var d = document.getElementsByClassName('Date')
-  var expired = document.getElementsByClassName('expired')
-
-  for(let i = 0; i < d.length; i++){
-    list = d[i].innerText.split('/');
-    var dead_line = new Date(list[2], list[1]-1, list[0], 0,0,0,0); //YY-MM-DD
-
-    if(today >= dead_line){
-     expired[i].style.display = 'inline';
-    }
-  }
-
-  </script>
-
-
-  </section>
+<script type="text/javascript">
+  query();
+</script>
 </body>
 </html>

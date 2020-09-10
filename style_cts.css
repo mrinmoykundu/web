@@ -48,3 +48,10 @@ ul {
   display: none;
 
 }
+
+.time_remaining{
+  font-size: 17px;
+  color: rgba(200,200,200,0.5);
+  display: inline-block;
+
+}
